@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, redirect, url_for, jsonify
 
 app = Flask(__name__)
-
+app.run(host="0.0.0.0", port=5000)
 # Mock user data for validation
 users = {
     "test@example.com": "password123"  # email:password
